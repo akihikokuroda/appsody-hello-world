@@ -2,7 +2,7 @@ apiVersion: appsody.dev/v1beta1
 kind: AppsodyApplication
 metadata:
   name: appsody-hello-world
-  namespace: tekton-pipelines
+  namespace: kabanero
 spec:
   applicationImage: docker-registry.default.svc:5000/kabanero/appsody-hello-world
   stack: java-microprofile
