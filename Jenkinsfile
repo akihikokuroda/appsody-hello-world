@@ -1,4 +1,4 @@
-podTemplate(label: 'label', cloud: 'openshift', serviceAccount: 'tekton-pipelines-controller', containers: [
+podTemplate(label: 'label', cloud: 'openshift', serviceAccount: 'appsody-sa', containers: [
     containerTemplate(name: 'kubectl', image: 'lachlanevenson/k8s-kubectl', ttyEnabled: true, command: 'cat')
   ]){
     node('label') {
